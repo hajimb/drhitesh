@@ -27,3 +27,6 @@ RewriteCond $1 !^(index\.php|img|robots\.txt)
 #<IfModule mod_suphp.c>
 #    suPHP_ConfigPath /opt/php70/lib
 #</IfModule>
+
+
+
