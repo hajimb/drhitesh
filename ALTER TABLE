@@ -1,0 +1,3 @@
+Date 18/12/2020 Friday
+
+ALTER TABLE `master_user` ADD `patient_id` INT NULL AFTER `id`;

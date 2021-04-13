@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<header_vars>
+		<text_color>FFFFFF</text_color>		
+		<text_header_1 x_pos="370" y_pos="78.5" size="29" letter_spacing="1.6">MY BLOG NAME</text_header_1>	
+		<text_header_2 x_pos="370" y_pos="135" size="12" letter_spacing="5.5">MY BLOG SLOGAN</text_header_2>	
+		<music_file play_music="no">http://www.mysite.com/mymusic.mp3</music_file>
+		<play_introduction_sound>yes</play_introduction_sound>
+</header_vars>

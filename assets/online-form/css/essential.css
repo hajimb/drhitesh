@@ -1,0 +1,39 @@
+.wrap-1{max-width: 1024px!important}
+
+select{cursor:pointer}
+
+.margin-top-20{margin-top:20px}
+
+.text-center{text-align:center}
+
+.smart-forms .sml-169{padding-left: 169px;}
+.smart-forms .smr-169{padding-right: 169px}
+
+.smart-forms .sml-132{padding-left: 132px}
+.smart-forms .smr-132{padding-right: 132px}
+
+.smart-forms .sml-95{padding-left: 95px}
+.smart-forms .smr-95{padding-right: 95px}
+
+.smart-forms{min-height:685px}
+
+.wizard > .steps > ul > li {width: 25%}
+
+.mar-top-0{margin-top:0px}
+
+.text-right{text-align:right!important}
+
+.smr{width: 100%; text-align:left !important;}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #000000 !important;
+    opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #000000 !important;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: #000000 !important;
+}

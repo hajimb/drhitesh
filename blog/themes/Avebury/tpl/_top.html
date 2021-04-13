@@ -1,0 +1,23 @@
+
+<div id="top" role="banner">
+<div id="top-image">
+<p id="prelude" role="navigation"><a href="#main">{{tpl:lang To content}}</a> |
+<a href="#blognav">{{tpl:lang To menu}}</a> |
+<a href="#search">{{tpl:lang To search}}</a></p>
+<div class="title">
+<div class="title-background">
+  <h1 class="title-name"><a href="{{tpl:BlogURL}}">{{tpl:BlogName encode_html="1"}}</a></h1>
+   <span id="blogdesc">{{tpl:BlogDescription}}</span>
+   
+  <!-- # --BEHAVIOR-- publicTopAfterContent -->
+  {{tpl:SysBehavior behavior="publicTopAfterContent"}}
+  
+</div><!-- End title-background -->
+</div><!-- End title -->
+</div><!-- End top-image -->
+</div><!-- End top -->
+
+<div id="simplemenu">
+{{tpl:SimpleMenu id="sn-top" class="supranav nosmall"}}
+</div>
+

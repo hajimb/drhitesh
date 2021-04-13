@@ -1,0 +1,27 @@
+<div id="top" role="banner">
+  <div id="f"></div>
+    <script type="text/javascript">
+    // <![CDATA[
+    //var so = new SWFObject(swf, id, width, height, version, background-color [, quality, xiRedirectUrl, redirectUrl, detectKey]);
+		var so = new SWFObject("{{tpl:BlogThemeURL}}/effet.swf", "effet12", "850", "180", "8.0.0", "#FFFFFF");
+		so.addParam("loop", "false");
+		so.addParam("WMODE", "transparent");
+		so.addParam("quality", "high");
+		so.addVariable("link_url", "{{tpl:BlogURL}}");		
+		so.addVariable("custom_xml_url", "{{tpl:BlogThemeURL}}/");		
+		so.addVariable("custom_img_url", "{{tpl:BlogThemeURL}}/images/your_image.jpg");	
+		so.write("f");		
+								
+		// ]]>
+		</script>
+	<!-- # --BEHAVIOR-- publicTopAfterContent -->
+  {{tpl:SysBehavior behavior="publicTopAfterContent"}}
+
+
+	</div>
+	
+{{tpl:Breadcrumb}}
+
+<p id="prelude" role="navigation"><a href="#main">{{tpl:lang To content}}</a> |
+<a href="#blognav">{{tpl:lang To menu}}</a> |
+<a href="#search">{{tpl:lang To search}}</a></p>

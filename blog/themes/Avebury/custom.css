@@ -1,0 +1,157 @@
+/* -------------------------------------------------------
+This file is part of the Avebury Dotclear theme.
+https://en.wikipedia.org/wiki/The_Ridgeway
+Licensed under the GPL version 2.0 license.
+See LICENSE file or
+http://www.gnu.org/licenses/old-licenses/gpl-2.0.html   
+----------------------------------------------------------*/
+/* -------------------------------------------------------
+Bing.com: Avebury Stone Circle, https://en.wikipedia.org/wiki/Avebury
+----------------------------------------------------------*/
+
+
+/* -------------------------------------------------------------
+	1. STRUCTURE - PAGE SIZE
+--------------------------------------------------------------- */
+#wrapper,#simplemenu nav {max-width: 80%;}  /* a modifier par la valeur de votre choix */
+
+/* -------------------------------------------------------------
+	1. STRUCTURE - DC-POST/DC-PAGE - STRUCTURE - 1 COLONNE
+--------------------------------------------------------------- */
+.dc-post #content,.dc-page #content{width: 100% !important;padding: 0px 5% 2.19em 5% !important;} 
+.dc-post #sidebar,.dc-page #sidebar{width: 100% !important;padding: 0 2.5% !important;}
+@media only screen and (max-width:600px){
+.dc-post div.widget,.dc-page div.widget{float:left;width:99.99999%;min-height: 200px;min-height: 20.0rem;}
+}/* Do not remove this bracket, it belongs to @media */
+@media screen and (min-width: 601px) and (max-width: 799px) {
+.dc-post div.widget,.dc-page div.widget{float:left;width:49.66666%;min-height: 200px;min-height: 20.0rem;}
+}/* Do not remove this bracket, it belongs to @media */
+@media screen and (min-width: 800px) and (max-width: 1023px) {
+.dc-post div.widget,.dc-page div.widget{float:left;width:33.33333%;min-height: 240px;min-height: 24.0rem;}
+}/* Do not remove this bracket, it belongs to @media */
+@media only screen and (min-width:1024px){
+.dc-post div.widget,.dc-page div.widget{float:left;width:24.99999%;min-height: 235px;min-height: 23.5rem;}
+}/* Do not remove this bracket, it belongs to @media */
+
+/* ------------------------------------------------------------
+	2. BALISES HTML PAR DEFAUT
+------------------------------------------------------------- */
+body {background:#1D1D1D;color: #444444;font: 1em/1.7 "Arimo", sans-serif;}
+a {color: #444444;}
+blockquote {border-left: 4px solid rgba(170,180,150,0.500);}
+
+/* ------------------------------------------------------------
+	3. PAGE
+------------------------------------------------------------- */
+#page {background:white;}
+
+/* ------------------------------------------------------------
+	4. HAUT DE PAGE
+------------------------------------------------------------- */
+#top {background-color: #262626; }
+#top-image{background: url(img/header.jpg);}
+.title-background {background: rgba(29,29,29,0.720);}
+.title-name a {color: rgba(255,255,255,0.999);}
+.title-name a:hover {color: rgba(255,255,255,0.720);}
+#blogdesc {color: rgba(255,255,255,0.620);border-top: 1px solid rgba(170,180,150,0.200);}
+#blogdesc:before {background: rgba(255,255,255,0.1);}
+#simplemenu { background:#1d1d1d;}
+#simplemenu nav .supranav li a, .supranav li a:visited {color: rgba(255, 255, 255, 0.600);}
+#simplemenu nav .simple-menu li a:hover {color:white;}
+#prelude, #prelude a {color: rgba(255, 255, 255, 0.900);}
+#prelude a:hover {color: rgba(255,255,255,0.720);}
+#breadcrumb,#breadcrumb a  {color:#B3B496;}
+
+/* ------------------------------------------------------------
+	5. WRAPPER MAIN CONTENT
+------------------------------------------------------------- */
+#content-info h2 {}
+.pagination {font-size:0.81rem; font-weight:700;background: font-weight:700;background:#1d1d1d;color: rgba(255, 255, 255, 0.700);}
+.pagination a {color: rgba(255, 255, 255, 0.700);}
+.dc-post #navlinks {font-size:0.81rem; font-weight:700;background:#1d1d1d;color: rgba(255, 255, 255, 0.700);}
+.dc-post #navlinks a {color: rgba(255, 255, 255, 0.700);}
+.dc-post #navlinks a:hover,.pagination a:hover  {color: rgba(255, 255, 255, 0.900);}
+
+/* ------------------------------------------------------------
+	6. BILLETS   
+------------------------------------------------------------- */
+.post{border-top: 1px solid rgba(170,180,150,0.900);}
+.dc-page .post,.dc-post .post,.post.first{border-top: 0px solid rgba(170,180,150,0.500);}
+.post-info a,.post-info {color:#B3B496;}
+.post-info a:hover,.post a:hover {color:#444444; }
+h2.post-title a{color:#444444; }
+h2.post-title a:hover {color:#B3B496; }
+.post-tags a {background: #B3B496;color:white !important;}
+.post-tags a:before {background: #FFF;}
+.post-tags a:after {border-right: 14px solid #B3B496;}
+.post-tags a:hover {background: rgba(179,180,150,0.500); color:white;}
+.post-tags a:hover:after { border-right-color:  rgba(179,180,150,0.500); }
+.post-excerpt p a,.post-content p a {border-bottom: 1px dotted #444;}
+.post-excerpt img,.post-content img {box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.196), 0px 2px 5px 0px rgba(0, 0, 0, 0.188) !important;}
+.read-it a {color:#B3B496;}
+
+/* ------------------------------------------------------------
+	7. COMMENTAIRES, PINGS
+------------------------------------------------------------- */
+#comments h3,#comment-form h3{border-bottom: 3px solid rgba(179,180,150,0.500);}
+#comments dd {border-bottom: 1px solid rgba(179,180,150,0.500);}
+#comments a {color:#B3B496;}
+.commentdate, .commenttime{clear:both;color:#B3B496;font-weight:100;}
+.field input { border-bottom:1px dashed #B3B496 !important;border:0;}
+.field input:focus {border: 1px solid #B3B496 !important;}
+.field textarea { border:1px solid #B3B496;}
+#comment-form input[type=submit],#comment-form input[type=reset] {background:#1d1d1d;color:white;}
+#comment-form input[type=submit]:hover,#comment-form input[type=reset]:hover {color: rgba(255, 255, 255, 0.720);}
+#comments-feed {padding-bottom:4em;}
+p#comments-feed {border-bottom: 1px solid rgba(170,180,150,0.500);}
+
+/* ------------------------------------------------------------
+	8. SIDEBAR
+------------------------------------------------------------- */
+div.widget img {box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.196), 0px 2px 5px 0px rgba(0, 0, 0, 0.188) !important;}
+div#search.widget input[type=text] {background: rgba(179,180,150,0.500); }
+div#search.widget input[type=submit] {background:#1d1d1d;color:white;}
+div#search.widget input[type=submit]:hover {color: rgba(255,255,255,0.720);}
+div.widget.selected { }
+div.widget.lang { }
+div.widget.categories { }
+div.widget.syndicate { }
+div.widget.feed {	} 
+div.widget.lastposts { }
+div.widget.lastcomments { }
+div.widget.pages { }
+div.widget.text { }
+div.widget.links { }
+div.tags { }
+div.tags ul { }
+div.tags li { }
+
+/* ------------------------------------------------------------
+	8.1 PLUGIN SPECIFIQUES
+------------------------------------------------------------- */
+.calendar a {color:#B3B496; }
+
+/* ------------------------------------------------------------
+	9. FOOTER
+------------------------------------------------------------- */
+#footer { background:#1d1d1d;color: rgba(255, 255, 255, 0.600);}
+#footer a {color: rgba(255, 255, 255, 0.600);}
+#footer a:hover {color:white;}
+#gotop {font-family: "Lato", sans-serif;border:1px solid rgba(255, 255, 255, 0.600);background-color:#1D1D1D !important;font-size:0.81rem;text-align: center;}
+#gotop a, #gotop a:link, #gotop a:hover, #gotop a:active {background: transparent;color:white;}
+#gotop a:hover {color: rgba(255, 255, 255, 0.750);}
+
+/* ------------------------------------------------------------
+	11. PAGES SPECIFIQUES
+------------------------------------------------------------- */
+
+.dc-home { }
+.dc-post { }
+.dc-categories { }
+.dc-category { }
+.dc-archive { }
+.dc-archive-month { }
+.dc-tags { }
+.dc-tag { }
+.dc-404 { }
+.dc-search { }

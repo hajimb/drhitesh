@@ -1,0 +1,52 @@
+{{tpl:extends parent="__parent__"}}
+
+<tpl:Block name="main-content">
+	 <p id="navlinks">
+  <tpl:ArchivePrevious><a href="{{tpl:ArchiveURL}}" class="prev">&#171; {{tpl:ArchiveDate encode_html="1"}}</a>
+  - </tpl:ArchivePrevious>
+  <a href="{{tpl:BlogArchiveURL}}">{{tpl:lang Archives}}</a>
+  <tpl:ArchiveNext> - <a href="{{tpl:ArchiveURL}}" class="next">{{tpl:ArchiveDate encode_html="1"}} &#187;</a></tpl:ArchiveNext>
+  </p>
+
+  <div id="content-info">
+    <h2>{{tpl:ArchiveDate}}</h2>
+  </div>
+
+  <div class="content-inner">
+ <tpl:Entries order="asc">
+<div id="p{{tpl:EntryID}}" class="post {{tpl:EntryIfOdd}} {{tpl:EntryIfFirst}}">
+
+   <!-- # New day date -->
+    <tpl:DateHeader><p class="day-date">{{tpl:EntryDate}}</p></tpl:DateHeader>
+
+	<h2 class="post-title"><span><a href="{{tpl:EntryURL}}">{{tpl:EntryTitle encode_html="1"}}</a></span></h2>
+	
+	<p class="post-info"><span class="date">{{tpl:EntryDate}}, {{tpl:EntryTime}}</span>
+	<tpl:EntryIf show_comments="1">
+	/ <a href="{{tpl:EntryURL}}#comments" class="comment_count">{{tpl:EntryCommentCount}}</a>
+	</tpl:EntryIf>
+	</p>
+
+    <!-- # --BEHAVIOR-- publicEntryBeforeContent -->
+    {{tpl:SysBehavior behavior="publicEntryBeforeContent"}}
+    <!-- # Entry with an excerpt -->
+    <tpl:EntryIf extended="1">
+      <div class="post-content"><p>{{tpl:EntryExcerpt encode_html="1" remove_html="1" cut_string="300"}}...</p></div>
+	<p class="read-it"><a href="{{tpl:EntryURL}}"
+	title="{{tpl:lang Continue reading}} {{tpl:EntryTitle encode_html="1"}}">{{tpl:lang Continue
+	reading}}</a><span class="readmore-ellipsis">...</span></p>
+    </tpl:EntryIf>
+    <!-- # Entry without excerpt -->
+    <tpl:EntryIf extended="0">
+      <div class="post-content"><p>{{tpl:EntryContent encode_html="1" remove_html="1" cut_string="700"}}...</p></div>
+	<p class="read-it"><a href="{{tpl:EntryURL}}"
+	title="{{tpl:lang Continue reading}} {{tpl:EntryTitle encode_html="1"}}">{{tpl:lang Continue
+	reading}}</a><span class="readmore-ellipsis">...</span></p>
+    </tpl:EntryIf>
+    <!-- # --BEHAVIOR-- publicEntryAfterContent -->
+    {{tpl:SysBehavior behavior="publicEntryAfterContent"}}
+    
+    </div>
+  </tpl:Entries>
+  </div>
+</tpl:Block>
